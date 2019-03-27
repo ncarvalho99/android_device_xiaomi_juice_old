@@ -143,7 +143,8 @@ DEVICE_PACKAGE_OVERLAYS += \
 
 # Remove unwanted packages
 PRODUCT_PACKAGES += \
-    RemovePackages
+    NoCutoutOverlay \
+    NotchBarKiller
 
 # Vendor Overlay
 PRODUCT_COPY_FILES += \
