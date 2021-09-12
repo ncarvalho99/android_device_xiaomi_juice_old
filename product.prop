@@ -4,12 +4,19 @@ ro.apex.updatable=false
 # Graphics
 debug.hwui.renderer=opengl
 debug.sf.disable_backpressure=1
-ro.surface_flinger.use_color_management=true
-ro.surface_flinger.use_context_priority=true
-ro.surface_flinger.has_wide_color_display=false
 debug.sf.latch_unsignaled=1
 ro.hardware.egl=adreno
 ro.hardware.vulkan=adreno
+
+# SurfaceFlinger
+ro.surface_flinger.protected_contents=true
+ro.surface_flinger.use_smart_90_for_video=true
+ro.surface_flinger.set_display_power_timer_ms=10000
+ro.surface_flinger.set_touch_timer_ms=5000
+ro.surface_flinger.set_idle_timer_ms=9000
+ro.surface_flinger.use_color_management=true
+ro.surface_flinger.use_context_priority=true
+ro.surface_flinger.has_wide_color_display=false
 
 # Always use GPU for screen compositing
 debug.sf.disable_hwc_overlays=1
