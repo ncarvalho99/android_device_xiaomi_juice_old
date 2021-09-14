@@ -59,3 +59,8 @@ vendor.audio.offload.buffer.size.kb=256
 
 # Dex2oat
 dalvik.vm.dex2oat64.enabled=true
+
+# IORap
+ro.iorapd.enable=true
+iorapd.perfetto.enable=true
+iorapd.readahead.enable=true
