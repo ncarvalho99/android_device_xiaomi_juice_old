@@ -162,3 +162,7 @@ PRODUCT_PACKAGES += \
     TelecommResCommon \
     TelephonyResCommon \
     WifiResCommon
+
+# GCam Go
+PRODUCT_PACKAGES += \
+    GCam
