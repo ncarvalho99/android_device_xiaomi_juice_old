@@ -16,9 +16,6 @@ TARGET_SUPPORTS_BLUR := true
 TARGET_FACE_UNLOCK_SUPPORTED := true
 TARGET_INCLUDE_LIVE_WALLPAPERS := false
 
-# APEX
-ENABLE_APEX := true
-
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := aosp_juice
 PRODUCT_DEVICE := juice
