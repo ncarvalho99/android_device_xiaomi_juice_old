@@ -20,7 +20,7 @@ TARGET_INCLUDE_LIVE_WALLPAPERS := false
 PRODUCT_NAME := aosp_juice
 PRODUCT_DEVICE := juice
 PRODUCT_BRAND := Xiaomi
-PRODUCT_MODEL := Redmi Note 9 4G / Redmi 9t / Redmi 9 Power / POCO M3
+PRODUCT_MODEL := Juice
 PRODUCT_MANUFACTURER := Xiaomi
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
