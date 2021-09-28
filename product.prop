@@ -64,3 +64,4 @@ dalvik.vm.dex2oat64.enabled=true
 ro.iorapd.enable=true
 iorapd.perfetto.enable=true
 iorapd.readahead.enable=true
+
