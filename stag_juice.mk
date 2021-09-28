@@ -7,8 +7,9 @@
 # Inherit from juice device
 $(call inherit-product, device/xiaomi/juice/device.mk)
 
-# Inherit some common AICP stuff.
-$(call inherit-product, vendor/aicp/config/common_full_phone.mk)
+# Inherit some common STAG stuff.
+$(call inherit-product, vendor/aicp/main.mk)
+BUILD_TYPE := UNOFFICIAL
 
 TARGET_GAPPS_ARCH := arm64
 TARGET_BOOT_ANIMATION_RES := 1080
@@ -17,7 +18,7 @@ TARGET_FACE_UNLOCK_SUPPORTED := true
 TARGET_INCLUDE_LIVE_WALLPAPERS := false
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := aicp_juice
+PRODUCT_NAME := stag_juice
 PRODUCT_DEVICE := juice
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Juice
