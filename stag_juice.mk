@@ -8,7 +8,7 @@
 $(call inherit-product, device/xiaomi/juice/device.mk)
 
 # Inherit some common STAG stuff.
-$(call inherit-product, vendor/stag/config/common_full_phone.mk)
+$(call inherit-product, vendor/stag/main.mk)
 BUILD_TYPE := UNOFFICIAL
 
 TARGET_GAPPS_ARCH := arm64
