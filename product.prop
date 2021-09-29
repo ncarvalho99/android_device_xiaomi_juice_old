@@ -2,8 +2,8 @@
 ro.apex.updatable=false
 
 # Graphics
-debug.hwui.renderer=opengl
 debug.egl.hw=0
+debug.hwui.renderer=opengl
 debug.sf.latch_unsignaled=1
 debug.sf.disable_backpressure=1
 ro.hardware.egl=adreno
