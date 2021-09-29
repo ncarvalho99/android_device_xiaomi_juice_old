@@ -66,3 +66,7 @@ dalvik.vm.dex2oat64.enabled=true
 ro.iorapd.enable=true
 iorapd.perfetto.enable=true
 iorapd.readahead.enable=true
+
+# Disable Rescue Party
+persist.sys.disable_rescue=true
+persist.device_config.configuration.disable_rescue_party=true
