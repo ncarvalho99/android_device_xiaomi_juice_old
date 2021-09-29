@@ -6,7 +6,6 @@
 
 DEVICE_PATH := device/xiaomi/juice
 
-# Broken R
 BUILD_BROKEN_DUP_RULES := true
 
 # Architecture
@@ -111,7 +110,7 @@ BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
 BOARD_KERNEL_SEPARATED_DTBO := false
 TARGET_KERNEL_ARCH := arm64
 TARGET_KERNEL_HEADERS := kernel/xiaomi/juice
-TARGET_KERNEL_CONFIG := vendor/citrus-perf_defconfig
+TARGET_KERNEL_CONFIG := vendor/lime-perf_defconfig
 TARGET_KERNEL_CLANG_COMPILE := true
 
 TARGET_PREBUILT_DTB := $(DEVICE_PATH)/prebuilt/dtb
@@ -177,6 +176,10 @@ BOARD_INCLUDE_RECOVERY_DTBO := true
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.default
 TARGET_RECOVERY_PIXEL_FORMAT := "RGBX_8888"
 TARGET_USERIMAGES_USE_F2FS := true
+
+# Properties
+TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
+TARGET_PRODUCT_PROP += $(DEVICE_PATH)/product.prop
 
 # Sepolicy
 include device/qcom/sepolicy/SEPolicy.mk
