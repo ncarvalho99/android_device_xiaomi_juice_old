@@ -1,15 +1,9 @@
-#
-# Copyright (C) 2021 The LineageOS Project
-#
-# SPDX-License-Identifier: Apache-2.0
-#
-
 LOCAL_PATH := $(call my-dir)
 
-ifneq ($(filter lemon pomelo citrus lime juice,$(TARGET_DEVICE)),)
-
 include $(CLEAR_VARS)
-
-include $(call all-makefiles-under,$(LOCAL_PATH))
-
-endif
+LOCAL_MODULE       := init.mi_thermald.rc
+LOCAL_MODULE_TAGS  := optional
+LOCAL_MODULE_CLASS := ETC
+LOCAL_SRC_FILES    := etc/init.mi_thermald.rc
+LOCAL_MODULE_PATH  := $(TARGET_ROOT_OUT)
+include $(BUILD_PREBUILT)
