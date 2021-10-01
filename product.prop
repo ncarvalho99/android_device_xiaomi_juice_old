@@ -1,17 +1,17 @@
 # Apex
 ro.apex.updatable=false
 
-#Graphics
-debug.hwui.renderer=opengl 
-debug.sf.latch_unsignaled=1 
-debug.sf.disable_backpressure=1 
-debug.sf.disable_hwc_overlays=1 
-debug.sdm.support_writeback=0 
-debug.enable.sglscale=1 
-debug.mdpcomp.logs=0 
-debug.sf.recomputecrop=0 
+# Graphics
+debug.hwui.renderer=opengl
+debug.sf.disable_backpressure=1
+debug.sf.latch_unsignaled=1
+debug.sf.disable_hwc_overlays=1
+debug.sdm.support_writeback=0
+debug.enable.sglscale=1
+debug.mdpcomp.logs=0
+debug.sf.recomputecrop=0
 vendor.display.disable_rotator_downscale=1
-ro.hardware.egl=adreno 
+ro.hardware.egl=adreno
 ro.hardware.vulkan=adreno
 
 # SurfaceFlinger
@@ -72,7 +72,3 @@ dalvik.vm.dex2oat64.enabled=true
 ro.iorapd.enable=true
 iorapd.perfetto.enable=true
 iorapd.readahead.enable=true
-
-# Disable Rescue Party
-persist.sys.disable_rescue=true
-persist.device_config.configuration.disable_rescue_party=true
