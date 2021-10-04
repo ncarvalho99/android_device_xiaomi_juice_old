@@ -59,3 +59,21 @@ ro.lmk.swap_free_low_percentage=20
 
 # Netflix custom property
 ro.netflix.bsp_rev=Q6115-31409-1
+
+# Now for some dalvik tweaks
+dalvik.vm.heapstartsize=8m
+dalvik.vm.heapgrowthlimit=256m
+dalvik.vm.heapsize=512m
+dalvik.vm.heaptargetutilization=0.50
+dalvik.vm.heapminfree=4m
+dalvik.vm.heapmaxfree=16m
+
+
+# CNE/DPM
+persist.vendor.cne.feature=1
+persist.vendor.dpm.feature=11
+persist.vendor.dpmhalservice.enable=1
+
+# WFD
+persist.debug.wfd.enable=1
+persist.sys.wfd.virtual=0
