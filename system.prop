@@ -84,10 +84,22 @@ ro.charger.enable_suspend=true
 # Netflix custom property
 ro.netflix.bsp_rev=Q6115-31409-1
 
+# CNE/DPM
+persist.vendor.cne.feature=1
+persist.vendor.dpm.feature=11
+persist.vendor.dpmhalservice.enable=1
+
+# WFD
+persist.debug.wfd.enable=1
+persist.sys.wfd.virtual=0
+
 # vendor
 persist.vendor.ssr.restart_level=ALL_ENABLE
 persist.vendor.ssr.enable_ramdumps=1
 persist.vendor.ims.disableADBLogs=1
+persist.vendor.ims.disableDebugLogs=1
+persist.vendor.ims.disableIMSLogs=1
+persist.vendor.ims.disableQXDMLogs=1
 persist.vendor.ims.disableDebugLogs=1
 persist.vendor.ims.disableIMSLogs=1
 persist.vendor.ims.disableQXDMLogs=1
