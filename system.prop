@@ -9,7 +9,7 @@ persist.vendor.radio.calls.on.ims=1
 
 # ZRAM
 ro.zram.mark_idle_delay_mins=60
-ro.zram.first_wb_delay_mins=180
+ro.zram.first_wb_delay_mins=1440
 ro.zram.periodic_wb_delay_hours=24
 
 # Bluetooth
@@ -42,6 +42,9 @@ dalvik.vm.boot-dex2oat-cpu-set=0,1,2,3,4,5,6,7
 ro.vendor.qti.sys.fw.bservice_enable=true
 ro.sys.fw.bservice_limit=5
 ro.sys.fw.bservice_age=5000
+ro.sys.fw.empty_app_percent=50 
+ro.sys.fw.trim_empty_percent=100 
+ro.sys.fw.trim_cache_percent=100
 ro.am.reschedule_service=true 
 ro.sys.fw.bg_apps_limit=32
 ro.config.fha_enable=true
@@ -52,6 +55,8 @@ ro.config.dha_lmk_scale=0.545
 ro.config.dha_th_rate=2.3
 ro.config.sdha_apps_bg_max=64
 ro.config.sdha_apps_bg_min=8
+ro.sys.fw.use_trim_settings=true
+ro.sys.fw.bservice_enable=true
 
 # Now for some dalvik tweaks
 dalvik.vm.heapstartsize=8m
@@ -60,20 +65,6 @@ dalvik.vm.heapsize=512m
 dalvik.vm.heaptargetutilization=0.50
 dalvik.vm.heapminfree=4m
 dalvik.vm.heapmaxfree=16m
-
-# HWUI Tweaks
-ro.hwui.texture_cache_size=72
-ro.hwui.layer_cache_size=48
-ro.hwui.path_cache_size=32
-ro.hwui.texture_cache_flushrate=0.4
-ro.hwui.shape_cache_size=4
-ro.hwui.gradient_cache_size=1
-ro.hwui.drop_shadow_cache_size=6
-ro.hwui.r_buffer_cache_size=8
-ro.hwui.text_small_cache_width=1024
-ro.hwui.text_small_cache_height=1024
-ro.hwui.text_large_cache_width=4096
-ro.hwui.text_large_cache_height=4096
 
 # Scroll optimization
 ro.vendor.perf.scroll_opt=true
@@ -97,9 +88,6 @@ persist.sys.wfd.virtual=0
 persist.vendor.ssr.restart_level=ALL_ENABLE
 persist.vendor.ssr.enable_ramdumps=1
 persist.vendor.ims.disableADBLogs=1
-persist.vendor.ims.disableDebugLogs=1
-persist.vendor.ims.disableIMSLogs=1
-persist.vendor.ims.disableQXDMLogs=1
 persist.vendor.ims.disableDebugLogs=1
 persist.vendor.ims.disableIMSLogs=1
 persist.vendor.ims.disableQXDMLogs=1
