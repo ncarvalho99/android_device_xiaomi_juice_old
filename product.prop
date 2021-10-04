@@ -60,3 +60,6 @@ vendor.audio.offload.buffer.size.kb=256
 # Dex2oat
 dalvik.vm.dex2oat64.enabled=true
 
+# Disable Rescue Party
+persist.sys.disable_rescue=true
+persist.device_config.configuration.disable_rescue_party=true
