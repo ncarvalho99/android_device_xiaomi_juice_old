@@ -23,6 +23,7 @@ ro.surface_flinger.set_idle_timer_ms=9000
 ro.surface_flinger.use_color_management=true
 ro.surface_flinger.use_context_priority=true
 ro.surface_flinger.has_wide_color_display=false
+ro.surface_flinger.running_without_sync_framework=true
 
 # Always use GPU for screen compositing
 debug.sf.disable_hwc_overlays=1
@@ -40,6 +41,10 @@ pm.sleep_mode=1
 
 # DRM
 drm.service.enabled=true
+
+# Chrome flags
+com.android.chrome.Chrome.Flags.CachedFlag.DynamicColorAndroid=true
+com.android.chrome.Chrome.Flags.CachedFlag.ThemeRefactorAndroid=true
 
 #Gboard Configuration by Vern
 ro.com.google.ime.corner_key_l=35
@@ -70,3 +75,7 @@ dalvik.vm.dex2oat64.enabled=true
 ro.iorapd.enable=true
 iorapd.perfetto.enable=true
 iorapd.readahead.enable=true
+
+# Disable Rescue Party
+persist.sys.disable_rescue=true
+persist.device_config.configuration.disable_rescue_party=true
